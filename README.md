@@ -581,12 +581,65 @@ The spaces are evenly distributed around the flex-items on the "cross-axis" as `
 
 ![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/content-around.png)
 
+## 4. Understanding the Flex Item properties.
+
+In the last section, we have seen all the properties and values for the flex-container. We saw how we can align the items on "main-axis" or "cross-axis" and how to utilize the extra space inside a flex-container. Like flex-container, there are few properties for flex-items also in flexbox method. The properties that can be applied to flex-items are:
+
+`order, flex-grow, flex-shrink, flex-basis, align-self`
+
+### A. Order
+
+This property allows us to reorder the flex-item within a flex-container without changing the source code in an HTML document. By default, we know that the elements are laid out according to the order in which it is written in the HTML document.
+
+![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/order.png)
+
+This is how the elements come in a page according to the HTML source code and we are seeing from the very beginning only. However, we can reorder the place of items on a page with `order` property in flexbox method. For example, let's say we want our first item at the end.
+
+```
+  <div class="container">
+    <div class="item item1">1</div>
+    <div class="item item2">2</div>
+    <div class="item item3">3</div>
+    <div class="item item4">4</div>
+  </div>
+
+  .container {
+    display: flex;
+  }
+  .item1 {
+    order: 1;
+  }
+```
+
+![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/order1.png)
+
+The item-1 came at the last, just because its order 1. By default every item has '0' value for the order property and it may take either postive or negative value. Thereafter the items are reordered according to the values for the order property, from lowest to highest. If the order value for the items are same then the items are laid out according to the order appeared in HTML source code.
+
+Let's see another example where we will reorder the 4th item at the first position and 1st item at the last.
+
+```
+  <div class="container">
+    <div class="item item1">1</div>
+    <div class="item item2">2</div>
+    <div class="item item3">3</div>
+    <div class="item item4">4</div>
+  </div>
+
+  .container {
+    display: flex;
+  }
+  .item1 {
+    order: 1;
+  }
+  .item4 {
+    order: -1;
+  }
+```
+
+![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/order2.png)
+
 ## Additional Resources
 
 1. https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
 2. https://flexbox.io/
-
-```
-
-```
