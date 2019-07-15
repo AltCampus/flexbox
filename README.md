@@ -21,20 +21,27 @@ To do so, we start with `display: flex` property and value. We set the parent's 
 So what happens we set the parent's style as `display: flex`. Let's check it out:
 
 ```
-<div class="container">
-	<div class="item">1</div>
-	<div class="item">2</div>
-	<div class="item">3</div>
-</div>
+  <div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
 
-.container {
-display: flex;
-}
-.item {
-background: aqua;
-padding: 16px;
-font-size: 20px;
-}
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    display: flex;
+    background: #FAFFFC;
+    border: 5px solid #182945;
+  }
+  .item {
+    background: #9EDDEB;
+    padding: 40px 50px;
+    font-size: 34px;
+    margin: 10px;
+  }
 ```
 
 ![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/intro.png)
