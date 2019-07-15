@@ -42,6 +42,7 @@ So what happens we set the parent's style as `display: flex`. Let's check it out
     font-size: 34px;
     margin: 10px;
   }
+
 ```
 
 ![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/intro.png)
