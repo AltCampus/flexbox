@@ -28,12 +28,12 @@ So what happens we set the parent's style as `display: flex`. Let's check it out
 </div>
 
 .container {
-display: flex;
+	display: flex;
 }
 .item {
-background: aqua;
-padding: 16px;
-font-size: 20px;
+	background: aqua;
+	padding: 16px;
+	font-size: 20px;
 }
 ```
 
