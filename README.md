@@ -1,6 +1,6 @@
 # Flexbox
 
-![alt text](https://github.com/AltCampus/flexbox/blob/master/media/banner.png)
+![alt text](https://drive.google.com/open?id=1jMQCsX1-8F4pAJG_bOm2Wzo4omb0sSqj)
 
 ## Introuduction
 
