@@ -108,6 +108,59 @@ The `display: inline-flex` is similar to inline elements, but this is for the in
 
 ### B. Flex Direction
 
+Flex direction property determines the direction of the item in which they will lay down. By default when we set the property as 'display: flex', all the item lay down one by one horizontally. Instead of saying items lay down horizontally, rather I must say items lay down on the 'main-axis'. Now here is the time to discuss the two terminologies i.e. 'main-axis' and 'cross-axis'.
+
+#### Terminology(main-axis and cross-axis)
+
+Actually, in the flexbox model, there are two axes: 'main-axis' and 'cross-axis'. Here we don't have something like 'horizontal-axis' and 'vertical-axis'.
+
+##### 1. Main Axis
+
+The 'main-axis' in the flexbox model is the primary axis along which the items are laid out in the flex container. By default, the 'main-axis' feels like "horizontal direction", from left to right.
+
+##### 2. Cross Axis
+
+The 'cross-axis' goes perpendicular to the 'main-axis'. It feels like "vertical direction", top to bottom.
+
+![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/axis.png)
+
+The important point to note here is that the 'main-axis' is not necessary to remail always in the horizontal direction. We can anytime interchange the direction of axes with the 'flex-direction' property. Now let's get back to the 'flex-direction' property.
+
+The flex-direction property can accept four values:
+
+flex-direction: row || column || row-reverse || column-reverse;
+
+#### Row
+
+flex-direction: row;
+
+This is the default value for 'flex-direction' property. After applying this property you won't find any changes.
+
+![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/row.png)
+
+#### Column
+
+flex-direction: column;
+After this value, all the item in the flex-container will lay down top to bottom. This value changes the direction of the axes in the flexbox model. The main-axis takes the place of 'cross-axis' and the 'cross-axis' takes the place of 'main-axis'.
+
+![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/column.png)
+
+#### Row-reverse
+
+flex-direction: row-reverse;
+
+The 'row-reverse' is similar to 'row' but this all the item will sit from right to left means in the opposite direction.
+
+![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/row-reverse.png)
+
+#### Column-reverse
+
+flex-direction: column-reverse;
+
+The 'column-reverse' is also opposite to the 'column'. The item will lay down from bottom to top.
+
+![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/column-reverse.png)
+
 ## Additional Resources
 
 1. https://css-tricks.com/snippets/css/a-guide-to-flexbox/
