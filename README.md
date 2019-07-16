@@ -1,12 +1,27 @@
 # Flexbox
 
-![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/banner.png)
-
 ## Introduction
+
+![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/banner.png)
 
 I hope we all have the basic knowledge of HTML and CSS now. In the last few days, we have learned how to position an element in a page according to the layout. We have learned about the floats and inline-block as well as a few advanced properties to position the elements. I am sure you all have been through the pains while working with the floats and a few other properties of positioning. Because I also have been the same problem as you guys are facing now.
 
 We always had been doing all those hackish methods of floats, table displays, inline-block for positioning the elements. But we can ditch all the hacky methods now. We are ready to go with flexbox. Flexbox is one of the most interesting topics of CSS. I am sure while working flexbox you will enjoy and will have a lot of fun.
+
+## Topics of the day
+
+1. What is flexbox?
+2. How does the flexbox model work?
+3. Flex Wrap
+4. Flex ordering
+5. Flexbox Alignment
+
+- Justify Content
+- Align Items
+- Align Content
+- Align Self
+
+6. Flex Sizing with flex Property
 
 ## What is flexbox?
 
@@ -54,6 +69,18 @@ This is how a simple flexbox model looks like. Once we say display flex to a par
 While working with flexbox model, there are few basic terminologies that you need to keep in mind. For example `flex container and flex-item`, as I have used just a few lines above. I will explain all the terminologies as it comes in our flow.
 
 For now, let's see what is `flex container and flex-item`?
+
+#### 1. Flex Container
+
+The Parent element where you need to apply 'display: flex'.
+
+#### 2. Flex Items
+
+The children elements inside the flex container.
+
+![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/container-item.png)
+
+## Additional Resources
 
 1. https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
