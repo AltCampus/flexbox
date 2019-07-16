@@ -23,11 +23,11 @@ We always had been doing all those hackish methods of floats, table displays, in
 
 6. Flex Sizing with flex Property
 
-## What is flexbox?
+## 1. What is flexbox?
 
 Flexbox provides us a more efficient way to lay out elements. It gives us the ability to align the items and distribute space among the items in a container - even though the size of the elements are unknown or dynamic. With the flexbox we get the power of flexibility(as the word flex says) in order fill the available space. So that elements can easily accommodate according to the size of screens. In a flexbox container, item expands to fill the free space as well as shrinks to prevent overflow.
 
-## How does the flexbox model work?
+## 2. How does the flexbox model work?
 
 Flexbox model comes with some sets of properties and values. In that few properties can be applied to parent container and few can be applied only on children items. So to make use of those flexbox model properties and values we will have to go into the zone of flexbox. So how do we go into that?
 
@@ -79,6 +79,34 @@ The Parent element where you need to apply 'display: flex'.
 The children elements inside the flex container.
 
 ![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/container-item.png)
+
+If you remember in the beginning we talked that the flexbox model comes with some sets of properties and values, in which few belongs to parent container and few can be applied to the children items. So here we have few properties that can be applied to the 'flex container' and few can be applied to 'flex-item'. Let's see what are properties that can be applied to flex container, we will discuss them in detail and then after will move into the properties of flex-item.
+
+## 3. Understanding the Flex Container properties.
+
+According to the flexbox model, the properties that can be applied to flex containers are:
+
+`Display, flex-direction, flex-wrap, flex-flow, justify-content, align-items, align-content`.
+
+### A. Display:
+
+The display property is to activate the flexbox model zone as we have discussed in the above section. Remember I told you that without setting the `display: flex`, you cannot get into the flexbox model zone, and therefore you cannot be benefited with the flexbox properties and values. This is the property from where the real magics get started.
+
+The display property can take two values:
+
+```
+display: flex || inline-flex;
+```
+
+The `display: flex` works normally as we have seen earlier.
+
+![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/intro.png)
+
+The `display: inline-flex` is similar to inline elements, but this is for the inline version of the flex container so that the container takes the space according to the content in it.
+
+![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/inline-flex.png)
+
+### B. Flex Direction
 
 ## Additional Resources
 
