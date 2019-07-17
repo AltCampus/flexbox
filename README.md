@@ -212,19 +212,20 @@ Let's take a few more items inside the flex container.
 ![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/flex-nowrap.png)
 
 Yes! exactly this is what happens with the flexbox model if we add extra items in the container. This is the default behavior of the flexbox container. The flex-container will always accommodate all the new items in a single line, even although the browser needs to be scrolled horizontally. Because right now the items are not being wrapped inside the container.
+
 For wrapping the items inside the flex container we have the `flex-wrap` property. The `flex-wrap` property comes with three different values:
 
 ```
-flex-wrap: no-wrap || wrap || wrap-reverse;
+flex-wrap: nowrap || wrap || wrap-reverse;
 ```
 
 #### No wrap
 
 ```
-flex-wrap: no-wrap;
+flex-wrap: nowrap;
 ```
 
-The no-wrap value is the default value, that we have seen earlier in this section. By default, the container has the `no-wrap` value for `flex-wrap` property, whether we apply or not. The container will always accommodate all the items inside it in a single line.
+The nowrap value is the default value, that we have seen earlier in this section. By default, the container has the `nowrap` value for `flex-wrap` property, whether we apply or not. The container will always accommodate all the items inside it in a single line.
 
 #### Wrap
 
@@ -245,6 +246,16 @@ flex-wrap: wrap-reverse;
 ![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/wrap-reverse.png)
 
 The `wrap-reverse` is similar to `wrap` value, but this value wraps the items in reverse direction.
+
+### C. Flex flow
+
+Flex flow property is the shorthand property for `flex-direction and flex-wrap`. I hope we all know what are shorthand and longhand properties.
+
+```
+flex-flow: row wrap;
+```
+
+The `flex-flow` property accepts two value at a time, where the first value is for the `flex-direction` and the last value is for `flex-wrap`.
 
 ## Additional Resources
 
