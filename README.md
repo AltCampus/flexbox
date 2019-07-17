@@ -108,58 +108,143 @@ The `display: inline-flex` is similar to inline elements, but this is for the in
 
 ### B. Flex Direction
 
-Flex direction property determines the direction of the item in which they will lay down. By default when we set the property as 'display: flex', all the item lay down one by one horizontally. Instead of saying items lay down horizontally, rather I must say items lay down on the 'main-axis'. Now here is the time to discuss the two terminologies i.e. 'main-axis' and 'cross-axis'.
+Flex direction property determines the direction of the item in which they will lay down. By default when we set the property as `display: flex`, all the item lay down one by one horizontally. Technically saying "horizontally" will be wrong here in the flexobx model. Instead, I must say items lay down on the `main-axis`. Now here is the time to discuss the two other terminologies i.e. `main-axis and cross-axis`.
 
 #### Terminology(main-axis and cross-axis)
 
-Actually, in the flexbox model, there are two axes: 'main-axis' and 'cross-axis'. Here we don't have something like 'horizontal-axis' and 'vertical-axis'.
+Actually, in the flexbox model, there are two axes: `main-axis and cross-axis`. Here we don't have something like `horizontal-axis and vertical-axis`.
 
 ##### 1. Main Axis
 
-The 'main-axis' in the flexbox model is the primary axis along which the items are laid out in the flex container. By default, the 'main-axis' feels like "horizontal direction", from left to right.
+The `main-axis` in the flexbox model is the primary axis along which the items are laid out in the flex container. By default, the `main-axis` feels like "horizontal direction", from left to right.
 
 ##### 2. Cross Axis
 
-The 'cross-axis' goes perpendicular to the 'main-axis'. It feels like "vertical direction", top to bottom.
+The `cross-axis` goes perpendicular to the `main-axis`. It feels like "vertical direction", top to bottom.
 
 ![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/axis.png)
 
-The important point to note here is that the 'main-axis' is not necessary to remail always in the horizontal direction. We can anytime interchange the direction of axes with the 'flex-direction' property. Now let's get back to the 'flex-direction' property.
+The important point to note here is that the `main-axis` is not necessary to remail always in the horizontal direction. We can anytime interchange the direction of axes with the `flex-direction` property. Now let's get back to the `flex-direction` property.
 
 The flex-direction property can accept four values:
 
+```
 flex-direction: row || column || row-reverse || column-reverse;
+```
 
 #### Row
 
+```
 flex-direction: row;
+```
 
-This is the default value for 'flex-direction' property. After applying this property you won't find any changes.
+This is the default value for `flex-direction` property. After applying this property you won't find any changes.
 
 ![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/row.png)
 
 #### Column
 
+```
 flex-direction: column;
-After this value, all the item in the flex-container will lay down top to bottom. This value changes the direction of the axes in the flexbox model. The main-axis takes the place of 'cross-axis' and the 'cross-axis' takes the place of 'main-axis'.
+```
+
+After this value, all the item in the flex-container will lay down top to bottom. This value changes the direction of the axes in the flexbox model. The `main-axis` takes the place of `cross-axis` and the `cross-axis` takes the place of `main-axis`.
 
 ![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/column.png)
 
 #### Row-reverse
 
+```
 flex-direction: row-reverse;
+```
 
-The 'row-reverse' is similar to 'row' but this all the item will sit from right to left means in the opposite direction.
+The `row-reverse` is similar to `row` but this all the item will sit from right to left means in the opposite direction.
 
 ![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/row-reverse.png)
 
 #### Column-reverse
 
+```
 flex-direction: column-reverse;
+```
 
-The 'column-reverse' is also opposite to the 'column'. The item will lay down from bottom to top.
+The `column-reverse` is also opposite to the `column`. The item will lay down from bottom to top.
 
 ![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/column-reverse.png)
+
+### B. Flex Wrap
+
+Flex wrap is the property which determines how the flex-container will accommodate if there are few extra number flex-items inside it. This property is better to explain with examples.
+
+Let's take a few more items inside the flex container.
+
+```
+  <div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+    <div class="item">7</div>
+    <div class="item">8</div>
+    <div class="item">9</div>
+  </div>
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    display: flex;
+    background: #FAFFFC;
+    border: 5px solid #182945;
+  }
+  .item {
+    background: #9EDDEB;
+    padding: 40px 50px;
+    font-size: 34px;
+    margin: 10px;
+  }
+
+```
+
+![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/flex-nowrap.png)
+
+Yes! exactly this is what happens with the flexbox model if we add extra items in the container. This is the default behavior of the flexbox container. The flex-container will always accommodate all the new items in a single line, even although the browser needs to be scrolled horizontally. Because right now the items are not being wrapped inside the container.
+For wrapping the items inside the flex container we have the `flex-wrap` property. The `flex-wrap` property comes with three different values:
+
+```
+flex-wrap: no-wrap || wrap || wrap-reverse;
+```
+
+#### No wrap
+
+```
+flex-wrap: no-wrap;
+```
+
+The no-wrap value is the default value, that we have seen earlier in this section. By default, the container has the `no-wrap` value for `flex-wrap` property, whether we apply or not. The container will always accommodate all the items inside it in a single line.
+
+#### Wrap
+
+```
+flex-wrap: wrap;
+```
+
+![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/flex-wrap.png)
+
+If the container does not has enough space to accommodate enough items in a single line, then with this value, the items will automatically break unto new lines.
+
+#### Wrap Reverse
+
+```
+flex-wrap: wrap-reverse;
+```
+
+![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/wrap-reverse.png)
+
+The `wrap-reverse` is similar to `wrap` value, but this value wraps the items in reverse direction.
 
 ## Additional Resources
 
