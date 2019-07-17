@@ -132,7 +132,7 @@ The flex-direction property can accept four values:
 flex-direction: row || column || row-reverse || column-reverse;
 ```
 
-#### Row
+#### Row(default)
 
 ```
 flex-direction: row;
@@ -219,7 +219,7 @@ For wrapping the items inside the flex container we have the `flex-wrap` propert
 flex-wrap: nowrap || wrap || wrap-reverse;
 ```
 
-#### No wrap
+#### No wrap(default)
 
 ```
 flex-wrap: nowrap;
@@ -257,8 +257,52 @@ flex-flow: row wrap;
 
 The `flex-flow` property accepts two value at a time, where the first value is for the `flex-direction` and the last value is for `flex-wrap`.
 
+### D. Justify Content
+
+To make the flexbox method more flexible the `justify-content` property plays an important role. This property defines how the items will be laid out on the "main-axis". It controls the alignment of the items on the "main-axis" also helps to make use extra space leftover in a flex container.
+
+The `justify-content` property can take 6 different values:
+
+```
+justify-content: flex-start || flex-end || center || space-between || space-around || space-evenly;
+```
+
+#### Flex Start(default)
+
+```
+
+justify-content: flex-start;
+
+```
+
+![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/intro.png)
+
+This is the default value of `justify-content` property where all the flex-items will start from the starting point on the "main-axis". As we are seeing from the beginning only how the flex-items are being laid out from the starting point in a flex-container.
+
+#### Flex End
+
+```
+
+justify-content: flex-end;
+
+```
+
+![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/flex-end.png)
+
+Here all the flex-items are laid out towards the endpoint of the "main-axis".
+
 ## Additional Resources
 
 1. https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
 2. https://flexbox.io/
+
+## Additional Resources
+
+1. https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+2. https://flexbox.io/
+
+```
+
+```
