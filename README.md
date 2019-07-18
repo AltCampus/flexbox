@@ -291,18 +291,48 @@ justify-content: flex-end;
 
 Here all the flex-items are laid out towards the endpoint of the "main-axis".
 
+#### Center
+
+```
+justify-content: center;
+```
+
+The 'center' value for 'justify-content' will center the flex-items along the "main-axis" line.
+
+![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/center.png)
+
+#### Space Between
+
+```
+justify-content: space-between;
+```
+
+The extra space in the flex container will be evenly distributed between the flex-items, where the first item in the container will stick to the starting point of the "main-axis" and the last item will stick to the endpoint of the main-axis.
+
+![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/space-between.png)
+
+#### Space Around
+
+```
+justify-content: space-around;
+```
+
+The extra space in the flex container will be evenly distributed around the flex-items on the "main-axis". Means on the left side as well as on the right side of the flex-items there will equal amount of space.
+
+![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/space-around.png)
+
+#### Space Evenly
+
+```
+justify-content: space-evenly;
+```
+
+The extra space in the flex container will be distributed in such a way that, the space between any two items as well the space of the item from the edge of the container will be equal.
+
+![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/space-evenly.png)
+
 ## Additional Resources
 
 1. https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
 2. https://flexbox.io/
-
-## Additional Resources
-
-1. https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-
-2. https://flexbox.io/
-
-```
-
-```
