@@ -445,7 +445,7 @@ Here the items are aligned based on the baseline of text inside the items.
 
 ![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/baseline.png)
 
-![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/note.png)
+![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/note1.png)
 
 ## Additional Resources
 
