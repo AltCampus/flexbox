@@ -348,9 +348,9 @@ The stretch value for the `align-items` property is the default value. All the "
 ```
   .container {
   	display: flex;
-    background: #FAFFFC;
-    border: 5px solid #182945;
-		height: 350px;
+  	background: #FAFFFC;
+  	border: 5px solid #182945;
+  	height: 350px;
   }
 ```
 
