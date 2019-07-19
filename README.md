@@ -347,10 +347,10 @@ The stretch value for the `align-items` property is the default value. All the "
 
 ```
   .container {
-    display: flex;
+  	display: flex;
     background: #FAFFFC;
     border: 5px solid #182945;
-	  height: 350px;
+		height: 350px;
   }
 ```
 
@@ -361,13 +361,13 @@ That's how all the flex-items behaves in the flexbox method on "cross-axis". So 
 #### Flex start
 
 ```
-  .container {
-    display: flex;
-    background: #FAFFFC;
-    border: 5px solid #182945;
-    height: 350px;
-    align-items: flex-start;
-  }
+	.container {
+		display: flex;
+		background: #FAFFFC;
+		border: 5px solid #182945;
+		height: 350px;
+		align-items: flex-start;
+	}
 ```
 
 As expected the `flex-items` will be laid out from the starting point on the "cross-axis".
