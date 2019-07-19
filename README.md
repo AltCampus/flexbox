@@ -333,9 +333,9 @@ The extra space in the flex container will be distributed in such a way that, th
 
 ### D. Align Items
 
-The 'align-items' property is similar to 'justify-content' property. The only difference is that the 'align-items' property works on "cross-axis". It defines how the "flex-items" will be laid out on the "cross-axis" inside a "flex container".
+The `align-items` property is similar to `justify-content` property. The only difference is that the `align-items` property works on "cross-axis". It defines how the "flex-items" will be laid out on the "cross-axis" inside a "flex container".
 
-The 'align-items' property comes with four values:
+The `align-items` property comes with four values:
 
 ```
 align-items: stretch || flex-start|| flex-end|| center || baseline;
@@ -343,14 +343,14 @@ align-items: stretch || flex-start|| flex-end|| center || baseline;
 
 #### Stretch(default)
 
-The stretch value for the `align-items` property is the default value. All the "flex-items" are stretched on the "cross-axis" to fill the extra space inside a container. By default, you won't see any effect on the items, because right now there is no extra space on the "cross-axis" inside the container. Just provide some height(let's say 500px) to the container and thereafter you can see the changes.
+The stretch value for the `align-items` property is the default value. All the "flex-items" are stretched on the "cross-axis" to fill the extra space inside a container. By default, you won't see any effect on the items, because right now there is no extra space on the "cross-axis" inside the container. Just provide some height(let's say 350px) to the container and thereafter you can see the changes.
 
 ```
   .container {
     display: flex;
     background: #FAFFFC;
     border: 5px solid #182945;
-	  height: 500px;
+	  height: 350px;
   }
 ```
 
@@ -361,29 +361,29 @@ That's how all the flex-items behaves in the flexbox method on "cross-axis". So 
 #### Flex start
 
 ```
-.container {
-  display: flex;
-  background: #FAFFFC;
-  border: 5px solid #182945;
-  height: 500px;
-  align-items: flex-start;
-}
+  .container {
+    display: flex;
+    background: #FAFFFC;
+    border: 5px solid #182945;
+    height: 350px;
+    align-items: flex-start;
+  }
 ```
 
-As expected the flex-items will be laid out from the starting point on the "cross-axis".
+As expected the `flex-items` will be laid out from the starting point on the "cross-axis".
 
 ![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/align-start.png)
 
 #### Flex End
 
 ```
-.container {
-  display: flex;
-  background: #FAFFFC;
-  border: 5px solid #182945;
-  height: 500px;
-  align-items: flex-end;
-}
+  .container {
+    display: flex;
+    background: #FAFFFC;
+    border: 5px solid #182945;
+    height: 350px;
+    align-items: flex-end;
+  }
 ```
 
 As expected the flex-items will be laid out towards the endpoint on the "cross-axis".
@@ -393,13 +393,13 @@ As expected the flex-items will be laid out towards the endpoint on the "cross-a
 #### Center
 
 ```
-.container {
-  display: flex;
-  background: #FAFFFC;
-  border: 5px solid #182945;
-  height: 500px;
-  align-items: center;
-}
+  .container {
+    display: flex;
+    background: #FAFFFC;
+    border: 5px solid #182945;
+    height: 350px;
+    align-items: center;
+  }
 ```
 
 The `center` value for `align-items` property will center the flex-items along the "cross-axis" line.
@@ -409,13 +409,36 @@ The `center` value for `align-items` property will center the flex-items along t
 #### Baseline
 
 ```
-.container {
-  display: flex;
-  background: #FAFFFC;
-  border: 5px solid #182945;
-  height: 500px;
-  align-items: baseline;
-}
+  <div class="container">
+    <div class="item item1">1</div>
+    <div class="item item2">2</div>
+    <div class="item item3">3</div>
+    <div class="item item4">4</div>
+  </div>
+
+  .container {
+    display: flex;
+    background: #FAFFFC;
+    border: 5px solid #182945;
+    height: 350px;
+  }
+  .item {
+    background: #9EDDEB;
+    padding: 40px 50px;
+    margin: 10px;
+  }
+  .item1 {
+    font-size: 34px;
+  }
+  .item2 {
+    font-size: 20px;
+  }
+  .item3 {
+    font-size: 48px;
+  }
+  .item4 {
+    font-size: 72px;
+  }
 ```
 
 Here the items are aligned based on the baseline of text inside the items.
