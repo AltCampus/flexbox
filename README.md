@@ -447,13 +447,8 @@ Here the items are aligned based on the baseline of text inside the items.
 
 
 
-
-```
-
-### NOTE:
-To be not confused, always remember, ```justify``` works along the "main-axis" and ```align``` works along the "cross-axis". 
-
-```
+``` ### NOTE:
+To be not confused, always remember, "justify" works along the "main-axis" and "align" works along the "cross-axis".```
 
 ## Additional Resources
 
