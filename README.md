@@ -445,6 +445,8 @@ Here the items are aligned based on the baseline of text inside the items.
 
 ![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/baseline.png)
 
+![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/note.png)
+
 ## Additional Resources
 
 1. https://css-tricks.com/snippets/css/a-guide-to-flexbox/
