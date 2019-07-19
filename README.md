@@ -25,7 +25,7 @@ We always had been doing all those hackish methods of floats, table displays, in
 
 ## 1. What is flexbox?
 
-Flexbox provides us a more efficient way to lay out elements. It gives us the ability to align the items and distribute space among the items in a container - even though the size of the elements are unknown or dynamic. With the flexbox we get the power of flexibility(as the word flex says) in order fill the available space. So that elements can easily accommodate according to the size of screens. In a flexbox container, item expands to fill the free space as well as shrinks to prevent overflow.
+Flexbox provides us a more efficient way to layout elements. It gives us the ability to align the items and distribute space among the items in a container - even though the size of the elements are unknown or dynamic. With the flexbox we get the power of flexibility(as the word flex says) in order fill the available space. So that elements can easily accommodate according to the size of screens. In a flexbox container, item expands to fill the free space as well as shrinks to prevent overflow.
 
 ## 2. How does the flexbox model work?
 
@@ -108,7 +108,7 @@ The `display: inline-flex` is similar to inline elements, but this is for the in
 
 ### B. Flex Direction
 
-Flex direction property determines the direction of the item in which they will lay down. By default when we set the property as `display: flex`, all the item lay down one by one horizontally. Technically saying "horizontally" will be wrong here in the flexobx model. Instead, I must say items lay down on the `main-axis`. Now here is the time to discuss the two other terminologies i.e. `main-axis and cross-axis`.
+Flex direction property determines the direction of the item in which they will lay down. By default when we set the property as `display: flex`, all the item lay down one by one horizontally. Technically saying "horizontally" will be wrong here in the flexbox model. Instead, I must say items lay down on the `main-axis`. Now here is the time to discuss the two other terminologies i.e. `main-axis and cross-axis`.
 
 #### Terminology(main-axis and cross-axis)
 
@@ -330,6 +330,97 @@ justify-content: space-evenly;
 The extra space in the flex container will be distributed in such a way that, the space between any two items as well the space of the item from the edge of the container will be equal.
 
 ![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/space-evenly.png)
+
+### D. Align Items
+
+The 'align-items' property is similar to 'justify-content' property. The only difference is that the 'align-items' property works on "cross-axis". It defines how the "flex-items" will be laid out on the "cross-axis" inside a "flex container".
+
+The 'align-items' property comes with four values:
+
+```
+align-items: stretch || flex-start|| flex-end|| center || baseline;
+```
+
+#### Stretch(default)
+
+The stretch value for the `align-items` property is the default value. All the "flex-items" are stretched on the "cross-axis" to fill the extra space inside a container. By default, you won't see any effect on the items, because right now there is no extra space on the "cross-axis" inside the container. Just provide some height(let's say 500px) to the container and thereafter you can see the changes.
+
+```
+  .container {
+    display: flex;
+    background: #FAFFFC;
+    border: 5px solid #182945;
+	  height: 500px;
+  }
+```
+
+![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/stretch.png)
+
+That's how all the flex-items behaves in the flexbox method on "cross-axis". So without applying `align-items: stretch`, to the container the items are stretched out to fill the space on the "cross-axis".
+
+#### Flex start
+
+```
+.container {
+  display: flex;
+  background: #FAFFFC;
+  border: 5px solid #182945;
+  height: 500px;
+  align-items: flex-start;
+}
+```
+
+As expected the flex-items will be laid out from the starting point on the "cross-axis".
+
+![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/align-start.png)
+
+#### Flex End
+
+```
+.container {
+  display: flex;
+  background: #FAFFFC;
+  border: 5px solid #182945;
+  height: 500px;
+  align-items: flex-end;
+}
+```
+
+As expected the flex-items will be laid out towards the endpoint on the "cross-axis".
+
+![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/align-end.png)
+
+#### Center
+
+```
+.container {
+  display: flex;
+  background: #FAFFFC;
+  border: 5px solid #182945;
+  height: 500px;
+  align-items: center;
+}
+```
+
+The `center` value for `align-items` property will center the flex-items along the "cross-axis" line.
+
+![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/align-center.png)
+
+#### Baseline
+
+```
+.container {
+  display: flex;
+  background: #FAFFFC;
+  border: 5px solid #182945;
+  height: 500px;
+  align-items: baseline;
+}
+```
+
+Here the items are aligned based on the baseline of text inside the items.
+
+![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/baseline.png)
 
 ## Additional Resources
 
