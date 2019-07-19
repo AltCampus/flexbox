@@ -445,6 +445,14 @@ Here the items are aligned based on the baseline of text inside the items.
 
 ![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/baseline.png)
 
+
+```
+
+NOTE:
+To be not confused, always remember, ```justify``` works along the "main-axis" and ```align``` works along the "cross-axis". 
+
+```
+
 ## Additional Resources
 
 1. https://css-tricks.com/snippets/css/a-guide-to-flexbox/
