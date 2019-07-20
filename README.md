@@ -445,7 +445,68 @@ Here the items are aligned based on the baseline of text inside the items.
 
 ![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/baseline.png)
 
-![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/note.png)
+![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/note1.png)
+
+### D. Align Content
+
+We have already seen `justify-content and align-items` property. The `justify-content` works on the "main-axis" and `align-items` works on the "cross-axis". But, here again, I am discussing the same thing, why? it's just because, the `align-content` property is somewhat similar to both `justify-content and align-items` property.
+
+The difference is that the `justify-content and align-items` property works on the individual items but the `align-content` property works on the multi-line flex container. If all the "flex-items" are on a single line in a container then this property does not affect. And as we all know from the above discussion that the `justify` woks on "main-axis" and `align` works on the "cross-axis", therefore the `align-content` property will also work on the "cross-axis".
+
+The `align-content` property accepts 6 different values:
+
+```
+
+align-content: stretch || flex-start || flex-end || center || space-between || space-around;
+
+```
+
+Let's experiment each value one by one but before that, we need to add a few more flex-items so that we have multi-line flex-container. Remember this property does not affect single line flex-container.
+
+```
+
+  <div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+    <div class="item">7</div>
+    <div class="item">8</div>
+    <div class="item">9</div>
+  </div>
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    background: #FAFFFC;
+    border: 5px solid #182945;
+    height: 350px;
+  }
+  .item {
+    background: #9EDDEB;
+    padding: 40px 50px;
+    margin: 10px;
+  }
+
+```
+
+#### Stretch(default)
+
+```
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+  }
+
+```
+
+This is the default value for the `align-content` property. All the items are stretched to take up the remaining space on the "cross-axis".
+
+![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/content-stretch.png)
 
 ## Additional Resources
 
