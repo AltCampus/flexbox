@@ -508,8 +508,85 @@ This is the default value for the `align-content` property. All the items are st
 
 ![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/content-stretch.png)
 
+#### Flex Start
+
+```
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+  }
+
+```
+
+All the items in a multi-line flex container will be aligned from the starting point on the "cross-axis".
+
+![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/content-start.png)
+
+#### Flex End
+
+```
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+  }
+
+```
+
+All the items in a multi-line flex-container will be aligned towards the endpoint on the "cross-axis".
+
+![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/content-end.png)
+
+#### Center
+
+```
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+```
+
+Items are laid out to the center of the multi-line flex-container on the "cross-axis".
+
+![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/content-center.png)
+
+#### Space Between
+
+```
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+  }
+```
+
+The spaces are evenly distributed between the flex-items on the "cross-axis" as `justify-content: space-between` property works on the "main-axis".
+
+![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/content-between.png)
+
+#### Space Around
+
+```
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+  }
+```
+
+The spaces are evenly distributed around the flex-items on the "cross-axis" as `justify-content: space-around` property works on the "main-axis".
+
+![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/content-around.png)
+
 ## Additional Resources
 
 1. https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
 2. https://flexbox.io/
+
+```
+
+```
