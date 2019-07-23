@@ -606,6 +606,11 @@ This is how the elements come in a page according to the HTML source code and we
   .container {
     display: flex;
   }
+  .item {
+    background: #9EDDEB;
+    padding: 40px 50px;
+    margin: 10px;
+  }
   .item1 {
     order: 1;
   }
@@ -628,6 +633,11 @@ Let's see another example where we will reorder the 4th item at the first positi
   .container {
     display: flex;
   }
+  .item {
+    background: #9EDDEB;
+    padding: 40px 50px;
+    margin: 10px;
+  }
   .item1 {
     order: 1;
   }
@@ -637,6 +647,62 @@ Let's see another example where we will reorder the 4th item at the first positi
 ```
 
 ![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/order2.png)
+
+### A. Flex Grow
+
+The `flex-grow` property allows the items to grow if there is extra space inside the flex container. The property accepts unitless value in number which provides the ability to grow to the items.
+
+By default, the value for `flex-grow` property is 0, means the size of the item will be auto. But if we want the item to grow to fill the extra space inside the container, will have to apply `flex-grow` property and set the value greater than 0. Let's check out the property visually.
+
+Suppose we have two items inside a flex-container and we want the items to grow in same proportionality. Then we can set the value 1 for flex-grow property for the items.
+
+```
+  <div class="container">
+    <div class="item item1">1</div>
+    <div class="item item2">2</div>
+  </div>
+
+  .container {
+    display: flex;
+  }
+  .item {
+    background: #9EDDEB;
+   	padding: 40px 50px;
+    margin: 10px;
+	  flex-grow: 1;
+  }
+```
+
+![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/flex-grow1.png)
+
+Here, the items are growing in the same proportionality means the extra space inside the container is distributed to the items in equal amounts.
+
+But, suppose if we want the first item to grow with proportionality 2, means the first item should get extra space in double amount than the second item. Let's see how we can do that.
+
+```
+  <div class="container">
+    <div class="item item1">1</div>
+    <div class="item item2">2</div>
+  </div>
+
+  .container {
+    display: flex;
+  }
+  .item {
+    background: #9EDDEB;
+    padding: 40px 50px;
+    margin: 10px;
+  }
+  .item1 {
+    flex-grow: 2;
+  }
+  .item2 {
+    flex-grow: 1;
+  }
+
+```
+
+![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/flex-grow2.png)
 
 ## Additional Resources
 
