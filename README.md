@@ -666,9 +666,9 @@ Suppose we have two items inside a flex-container and we want the items to grow 
     display: flex;
   }
   .item {
-		background: #9EDDEB;padding: 40px 50px;
-		margin: 10px;
-		flex-grow: 1;
+	background: #9EDDEB;padding: 40px 50px;
+	margin: 10px;
+	flex-grow: 1;
   }
 ```
 
@@ -778,7 +778,7 @@ By default, the value for `flex-basis` property is auto, means the base size of 
     background: #9EDDEB;
     padding: 40px 50px;
     margin: 10px;
-	  flex-basis: 200px;
+    flex-basis: 200px;
   }
 
 ```
