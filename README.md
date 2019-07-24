@@ -807,6 +807,106 @@ Here, 1 is the value for `flex-grow` property and the values for `flex-shrink an
 
 It's better to go with with the `flex` shorthand property, instead of applying `flex-grow, flex-shrink, and flex-basis` individually.
 
+### F. Align Self
+
+The ```align-self``` property is similar to ```align-items``` property. It accepts all the same values as the ```align-items``` accepts. The only difference is that the ```align-self``` property is applied to the flex-items but the ```align-items``` property is applied to the flex container. 
+
+```
+	align-self: stretch || flex-start || flex-end || center || baseline;
+	
+```
+Also, we all know from the above discussion that "align" always works on the "cross-axis", therefore we must have some extra space on the "cross-axis".
+
+```
+	<div class="container">
+    <div class="item item1">1</div>
+    <div class="item item2">2</div>
+		<div class="item item3">2</div>
+  </div>
+
+  .container {
+    display: flex;
+		height: 350px;
+  }
+  .item {
+    background: #9EDDEB;
+    padding: 40px 50px;
+    margin: 10px;
+  }
+```
+
+
+#### Stretch
+
+The property is to stretch out the size of individual items on the "cross-axis" to fill the extra space.
+
+```
+  
+	.item3 {
+		align-self: stretch;
+	}
+
+```
+
+![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/flex-basis.png)
+
+#### Flex Start
+
+The item will be aligned from the starting point on the "cross-axis".
+
+```
+  
+	.item3 {
+		align-self: flex-start;
+	}
+
+```
+
+![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/flex-basis.png)
+
+#### Flex End
+
+The item will be aligned towards the endpoint on the "cross-axis".
+
+```
+  
+	.item3 {
+		align-self: flex-end;
+	}
+
+```
+
+![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/flex-basis.png)
+
+#### Center
+
+The item will be aligned at the center on the "cross-axis".
+
+```
+  
+	.item3 {
+		align-self: center;
+	}
+
+```
+
+![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/flex-basis.png)
+
+#### Baseline
+
+We have already seen baseline value for ```align-items``` property for the "flex-container". The baseline value for ```aling-self``` property also works in the same way.
+
+```
+  
+	.item3 {
+		align-self: baseline;
+	}
+
+```
+
+![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/flex-basis.png)
+
+
 ## Additional Resources
 
 1. https://css-tricks.com/snippets/css/a-guide-to-flexbox/
