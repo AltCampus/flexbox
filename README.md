@@ -690,7 +690,7 @@ But, suppose if we want the first item to grow with proportionality 2, means the
   .item {
     background: #9EDDEB;
     padding: 40px 50px;
-	  margin: 10px;
+    margin: 10px;
   }
   .item1 {
     flex-grow: 2;
@@ -750,8 +750,8 @@ However, if we set 0 value for the `flex-shrink` property the item size won't re
     background: #9EDDEB;
     padding: 40px 50px;
     margin: 10px;
-	  flex-basis: 300px;
-	  flex-shrink: 0;
+    flex-basis: 300px;
+    flex-shrink: 0;
   }
 
 ```
