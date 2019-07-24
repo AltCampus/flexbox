@@ -759,6 +759,55 @@ However, if we set 0 value for the `flex-shrink` property the item size won't re
 
 ![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/flex-shrink3.png)
 
+### D. Flex Basis
+
+We got a bit introduction of `flex-basis` property in the last section. The `flex-basis` property is somewhat similar to the width property, as it accepts the values(in px, %, em, rem, etc.) similar to the width property.
+The `flex-basis` property is applied to set a base width or size of the flex-item from where the item will grow or shrink if necessary.
+
+By default, the value for `flex-basis` property is auto, means the base size of the item will be computed based on to the content inside it plus whatever the padding we will apply to the item.
+
+```
+  <div class="container">
+    <div class="item item1">1</div>
+    <div class="item item2">2</div>
+  </div>
+
+  .container {
+    display: flex;
+  }
+  .item {
+    background: #9EDDEB;
+    padding: 40px 50px;
+    margin: 10px;
+	  flex-basis: 200px;
+  }
+
+```
+
+![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/flex-basis.png)
+
+### E. Flex
+
+`Flex` property is the shorthand property for the `flex-grow, flex-shrink, and flex-basis`.
+
+```
+.item {
+	flex: 0 1 auto;
+}
+```
+
+This is the default value for the `flex` property where the first value is for `flex-grow`, second is for `flex-shrink` and the last value is for `flex-basis`. The last two value for `flex` property is optional. We can also do something like this:
+
+```
+.item {
+  flex: 1;
+}
+```
+
+Here, 1 is the value for `flex-grow` property and the values for `flex-shrink and flex-basis` will be automatically set to the default.
+
+It's better to go with with the `flex` shorthand property, instead of applying `flex-grow, flex-shrink, and flex-basis` individually.
+
 ## Additional Resources
 
 1. https://css-tricks.com/snippets/css/a-guide-to-flexbox/
