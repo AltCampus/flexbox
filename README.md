@@ -666,8 +666,7 @@ Suppose we have two items inside a flex-container and we want the items to grow 
     display: flex;
   }
   .item {
-  	background: #9EDDEB;
-		padding: 40px 50px;
+		background: #9EDDEB;padding: 40px 50px;
 		margin: 10px;
 		flex-grow: 1;
   }
