@@ -652,7 +652,7 @@ Let's see another example where we will reorder the 4th item at the first positi
 
 The `flex-grow` property allows the items to grow if there is extra space inside the flex container. The property accepts unitless value in number which provides the ability to grow to the items.
 
-By default, the value for `flex-grow` property is 0, means the size of the item will be auto. But if we want the item to grow to fill the extra space inside the container, will have to apply `flex-grow` property and set the value greater than 0. Let's check out the property visually.
+By default, the value for `flex-grow` property is 0, means the size of the item will be auto. It may accept any value but not in negative. If we want the item to grow and fill the extra space inside the container, will have to apply `flex-grow` property and set the value greater than 0. Let's check out the property visually.
 
 Suppose we have two items inside a flex-container and we want the items to grow in same proportionality. Then we can set the value 1 for flex-grow property for the items.
 
@@ -667,9 +667,9 @@ Suppose we have two items inside a flex-container and we want the items to grow 
   }
   .item {
     background: #9EDDEB;
-    padding: 40px 50px;
+   	padding: 40px 50px;
     margin: 10px;
-    flex-grow: 1;
+	  flex-grow: 1;
   }
 ```
 
@@ -691,7 +691,7 @@ But, suppose if we want the first item to grow with proportionality 2, means the
   .item {
     background: #9EDDEB;
     padding: 40px 50px;
-    margin: 10px;
+	  margin: 10px;
   }
   .item1 {
     flex-grow: 2;
@@ -703,6 +703,61 @@ But, suppose if we want the first item to grow with proportionality 2, means the
 ```
 
 ![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/flex-grow2.png)
+
+### A. Flex Shrink
+
+The `flex-shrink` property is opposite to the `flex-grow` property. It allows the items to shrink if there is no extra space in the container. For the practical view, just reduce the size of your screens. You will find the width of the items is also reducing as the size of screens is reducing.
+
+By default, value for `flex-shrink` property is 1. Similar to `flex-grow` property the `flex-shrink` property also accepts a unitless value but greater than 0. Negative values are invalid.
+
+```
+  <div class="container">
+    <div class="item item1">1</div>
+    <div class="item item2">2</div>
+  </div>
+
+  .container {
+    display: flex;
+  }
+  .item {
+    background: #9EDDEB;
+    padding: 40px 50px;
+    margin: 10px;
+    flex-basis: 300px;
+    flex-shrink: 1;
+  }
+```
+
+Here, 1 is the default value for `flex-shrink` property that we have applied, means the item size will reduce as per the size of the screens. For a better understanding of `flex-shrink` property, I have also applied `flex-basis` property. The `flex-basis` property is to set the initial size of the item before the item will grow or shrink in a flex-container according to the extra space, that we will see in the next section.
+
+![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/flex-shrink1.png)
+
+This is what we will see after applying `flex-shrink: 1 and flex-basis: 300px`. Now if you will reduce the size of your screen, the items size will also reduce.
+
+![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/flex-shrink2.png)
+
+However, if we set 0 value for the `flex-shrink` property the item size won't reduce as per the size of the screens. The item will overflow in the flex container.
+
+```
+  <div class="container">
+    <div class="item item1">1</div>
+    <div class="item item2">2</div>
+  </div>
+
+  .container {
+    display: flex;
+  }
+  .item {
+    background: #9EDDEB;
+    padding: 40px 50px;
+    margin: 10px;
+	  flex-basis: 300px;
+	  flex-shrink: 0;
+  }
+
+```
+
+![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/flex-shrink3.png)
 
 ## Additional Resources
 
