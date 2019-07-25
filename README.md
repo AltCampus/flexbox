@@ -12,16 +12,25 @@ We always had been doing all those hackish methods of floats, table displays, in
 
 1. What is flexbox?
 2. How does the flexbox model work?
-3. Flex Wrap
-4. Flex ordering
-5. Flexbox Alignment
+3. Terminology:(Flex Container and Flex Items)
+4. Understanding the Flex Container properties.
 
+- Display
+- Flex Direction
+- Flex Wrap
+- Flex Flow
 - Justify Content
 - Align Items
 - Align Content
-- Align Self
 
-6. Flex Sizing with flex Property
+5. Understanding the Flex Item properties.
+
+- Order
+- Flex Grow
+- Flex Shrink
+- Flex Basis
+- Flex
+- Align Self
 
 ## 1. What is flexbox?
 
@@ -64,7 +73,7 @@ So what happens we set the parent's style as `display: flex`. Let's check it out
 
 This is how a simple flexbox model looks like. Once we say display flex to a parent element, it automatically becomes `flex container` and the children inside it becomes `flex-item`.
 
-### Terminology:
+### Terminology:(Flex Container and Flex Items)
 
 While working with flexbox model, there are few basic terminologies that you need to keep in mind. For example `flex container and flex-item`, as I have used just a few lines above. I will explain all the terminologies as it comes in our flow.
 
@@ -585,7 +594,7 @@ The spaces are evenly distributed around the flex-items on the "cross-axis" as `
 
 In the last section, we have seen all the properties and values for the flex-container. We saw how we can align the items on "main-axis" or "cross-axis" and how to utilize the extra space inside a flex-container. Like flex-container, there are few properties for flex-items also in flexbox method. The properties that can be applied to flex-items are:
 
-`order, flex-grow, flex-shrink, flex-basis, align-self`
+`order, flex-grow, flex-shrink, flex-basis, Flex, align-self`
 
 ### A. Order
 
