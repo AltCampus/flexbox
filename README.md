@@ -355,12 +355,12 @@ align-items: stretch || flex-start|| flex-end|| center || baseline;
 The stretch value for the `align-items` property is the default value. All the "flex-items" are stretched on the "cross-axis" to fill the extra space inside a container. By default, you won't see any effect on the items, because right now there is no extra space on the "cross-axis" inside the container. Just provide some height(let's say 350px) to the container and thereafter you can see the changes.
 
 ```
-  .container {
-  	display: flex;
-  	background: #FAFFFC;
-  	border: 5px solid #182945;
-  	height: 350px;
-  }
+	.container {
+		display: flex;
+		background: #FAFFFC;
+		border: 5px solid #182945;
+		height: 350px;
+	}
 ```
 
 ![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/stretch.png)
@@ -674,11 +674,11 @@ Suppose we have two items inside a flex-container and we want the items to grow 
   .container {
     display: flex;
   }
-  .item {
+	.item {
 		background: #9EDDEB;padding: 40px 50px;
 		margin: 10px;
 		flex-grow: 1;
-  }
+	}
 ```
 
 ![alt text](https://raw.githubusercontent.com/AltCampus/flexbox/master/media/flex-grow1.png)
@@ -799,17 +799,17 @@ By default, the value for `flex-basis` property is auto, means the base size of 
 `Flex` property is the shorthand property for the `flex-grow, flex-shrink, and flex-basis`.
 
 ```
-.item {
-flex: 0 1 auto;
-}
+	.item {
+		flex: 0 1 auto;
+	}
 ```
 
 This is the default value for the `flex` property where the first value is for `flex-grow`, second is for `flex-shrink` and the last value is for `flex-basis`. The last two value for `flex` property is optional. We can also do something like this:
 
 ```
-.item {
-  flex: 1;
-}
+	.item {
+		flex: 1;
+	}
 ```
 
 Here, 1 is the value for `flex-grow` property and the values for `flex-shrink and flex-basis` will be automatically set to the default.
@@ -821,7 +821,7 @@ It's better to go with with the `flex` shorthand property, instead of applying `
 The `align-self` property is similar to `align-items` property. It accepts all the same values as the `align-items` accepts. The only difference is that the `align-self` property is applied to the flex-items but the `align-items` property is applied to the flex container.
 
 ```
-	align-self: auto || stretch || flex-start || flex-end || center || baseline;
+align-self: auto || stretch || flex-start || flex-end || center || baseline;
 
 ```
 
@@ -829,21 +829,21 @@ Also, we all know from the above discussion that "align" always works on the "cr
 
 ```
 	<div class="container">
-    <div class="item item1">1</div>
-    <div class="item item2">2</div>
+		<div class="item item1">1</div>
+		<div class="item item2">2</div>
 		<div class="item item3">2</div>
-  </div>
+	</div>
 
-  .container {
-    display: flex;
+	.container {
+		display: flex;
 		height: 350px;
-    align-items: flex-start;
-  }
-  .item {
-    background: #9EDDEB;
-    padding: 40px 50px;
-    margin: 10px;
-  }
+		align-items: flex-start;
+	}
+	.item {
+		background: #9EDDEB;
+		padding: 40px 50px;
+		margin: 10px;
+	}
 ```
 
 #### Auto
